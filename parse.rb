@@ -45,13 +45,23 @@ links.each do |link|
 
       elsif child.text?
         child = child.text.to_s.gsub("#{paragraph}.", '')
-      else
-        next
+      elsif child.text
+        child = child.text
       end
 
-      lbcf[chapter][:paragraphs][paragraph] << child.to_s.gsub("\r\n", ' ').rstrip
+      lbcf[chapter][:paragraphs][paragraph] << child.to_s.gsub("\r\n", ' ')
     end
   end
 end
 
-puts lbcf.to_yaml
+lbcf.each do |chapter, content|
+  puts '<section>'
+  puts "\t<h3 id=\"chapter-#{chapter}\">Chapter #{chapter}</h3>"
+  puts "\t<h2>#{content[:title]}</h2>"
+  content[:paragraphs].each do |p_number, p_contents|
+    puts "\t<p>"
+    puts "\t\t#{p_contents.join.strip.gsub('&', '&amp;')}"
+    puts "\t</p>"
+  end
+  puts '</section>'
+end
