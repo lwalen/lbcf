@@ -1,0 +1,19 @@
+body {
+  font-family: 'Martel', serif;
+  margin: 0;
+}
+
+.main {
+  width: 62%;
+  float: left;
+  padding: 20px;
+}
+
+.side {
+  background-color: #dddddd;
+  float: left;
+  width: 35%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+}
