@@ -17,3 +17,7 @@ body {
   position: fixed;
   right: 0;
 }
+
+.paragraph-number {
+  font-weight: bold;
+}
