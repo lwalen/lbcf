@@ -198,12 +198,11 @@ links.each do |link|
 
     lbcf[chapter][:paragraphs][paragraph] = []
 
-    references = content.css('a[href*="scric"]')
+    need_close = false
 
     content.children.each_with_index do |child, index|
 
       if child.element? && child.css('a').any? && child.css('a').attr('href')
-
 
         ref_url = child.css('a').attr('href')
         ref_verses = page.css("a[href='#{ref_url}']").last
@@ -211,19 +210,38 @@ links.each do |link|
         ref_verses.css('i').remove
         verses = ref_verses.text.to_s.gsub("\r\n", ' ').strip
         verses = cleanup_verses(verses)
+        # puts verses
+        # puts lbcf[chapter][:paragraphs][paragraph][index - 1]
 
-        lbcf[chapter][:paragraphs][paragraph][index - 1] = "<span class=\"ref\" data-verses=\"#{verses}\">#{lbcf[chapter][:paragraphs][paragraph][index - 1]}"
-        child = "</span>"
+
+        child = ""
+
+        if need_close
+          child += "</span>"
+          need_close = false
+        end
+
+        child += "<span class=\"ref\" data-verses=\"#{verses}\">"
+        need_close = true
 
       elsif child.text?
         child = child.text.to_s.gsub("#{paragraph}.", '')
+        if need_close
+          child += "</span>"
+          need_close = false
+        end
       elsif child.text
         child = child.text
+        if need_close
+          child += "</span>"
+          need_close = false
+        end
       end
 
       lbcf[chapter][:paragraphs][paragraph] << child.to_s.gsub("\r\n", ' ')
     end
   end
+  # exit
 end
 
 puts <<-EOS
