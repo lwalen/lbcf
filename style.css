@@ -21,3 +21,7 @@ body {
 .paragraph-number {
   font-weight: bold;
 }
+
+.ref {
+  border-bottom: 1px dotted;
+}
