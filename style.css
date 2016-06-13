@@ -23,5 +23,5 @@ body {
 }
 
 .ref {
-  border-bottom: 1px dotted;
+  vertical-align: super;
 }
