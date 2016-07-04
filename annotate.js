@@ -1,28 +1,44 @@
 var verses = {};
+var current_ref = null;
+
 $(function() {
-  $.getJSON('/verses.json', function(data) {
-    verses = data;
-  });
+	$.getJSON('/verses.json', function(data) {
+		verses = data;
+	});
 
-  $('.ref').on('mouseover', function() {
-    $(this).css('background-color', '#dddddd');
-    var refs = $(this).data('verses').split(';');
-    var content = "";
+	$('.ref').on('mouseover', function() {
+		$(this).css('background-color', '#dddddd');
+		show_refs($(this));
+	});
 
-    refs.forEach(function(ref) {
-      ref = ref.trim();
+	$('.ref').on('click', function() {
+		$('.ref').css('border', '');
+		$(this).css('border', '1px solid black');
+		current_ref = $(this);
+	});
 
-      if (verses[ref]) {
-        content += "<h4>" + ref + "</h4>";
-        content += "<p>" + verses[ref] + "</p>";
-      }
-    });
-
-    $('.side').html(content);
-  });
-
-  $('.ref').on('mouseout', function() {
-    $(this).css('background-color', '');
-    $('.side').text('');
-  });
+	$('.ref').on('mouseout', function() {
+		$(this).css('background-color', '');
+			if (current_ref) {
+			show_refs($(current_ref));
+		} else {
+			$('.side').html("");
+		}
+	});
 });
+
+function show_refs(r) {
+	var refs = $(r).data('verses').split(';');
+	var content = "";
+
+	refs.forEach(function(ref) {
+		ref = ref.trim();
+
+		if (verses[ref]) {
+			content += "<h4>" + ref + "</h4>";
+			content += "<p>" + verses[ref] + "</p>";
+		}
+	});
+
+	$('.side').html(content);
+}
