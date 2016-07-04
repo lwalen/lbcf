@@ -19,10 +19,10 @@ $(function() {
 
 	$('.ref').on('mouseout', function() {
 		$(this).css('background-color', '');
-			if (current_ref) {
+		if (current_ref) {
 			show_refs($(current_ref));
 		} else {
-			$('.side').html("");
+			clear_refs();
 		}
 	});
 });
@@ -40,5 +40,14 @@ function show_refs(r) {
 		}
 	});
 
-	$('.side').html(content);
+	var section = r.parent().find('.paragraph-number').attr('id');
+	var pattern = /chapter-([0-9]+)-paragraph-([0-9]+)/g;
+	var section_name = section.replace(pattern, 'Chapter $1, Paragraph $2');
+	$('.side .ref-link').html("<a href='#" + section + "'>" + section_name + "</a>");
+	$('.side .content').html(content);
+}
+
+function clear_refs() {
+	$('.side .ref-link').html("");
+	$('.side .content').html("");
 }
