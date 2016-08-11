@@ -8,7 +8,6 @@ $(function() {
 
 	$('.ref').on('mouseover', function() {
 		$(this).css('background-color', '#F9F7F3');
-		$(this).css('border-radius', '50%');
 		show_refs($(this));
 	});
 
