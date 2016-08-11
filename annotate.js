@@ -7,18 +7,22 @@ $(function() {
 	});
 
 	$('.ref').on('mouseover', function() {
-		$(this).css('background-color', '#dddddd');
+		$(this).css('background-color', '#F9F7F3');
+		$(this).css('border-radius', '50%');
 		show_refs($(this));
 	});
 
 	$('.ref').on('click', function() {
 		$('.ref').css('border', '');
-		$(this).css('border', '1px solid black');
+		$(this).css('background-color', '#FF5750');
+		$(this).css('color', '#F9F7F3');
+
 		current_ref = $(this);
 	});
 
 	$('.ref').on('mouseout', function() {
 		$(this).css('background-color', '');
+		$(this).css('color', '');
 		if (current_ref) {
 			show_refs($(current_ref));
 		} else {
