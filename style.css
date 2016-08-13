@@ -19,6 +19,16 @@ body {
 section{
   max-size:800px;
   margin: 0 auto;
+  padding-bottom:2em;
+}
+
+.cover{
+  margin:0 auto;
+  background-color:#FF5750;
+  width: 60%;
+  float: left;
+  padding: 5%;
+  text-align: center;
 }
 
 .colophon{
@@ -67,18 +77,21 @@ section{
 
 h1{
   font-family: 'Asul', sans-serif;
-  font-size:1em;
+  font-size:1.5em;
   font-weight:600;
   margin:0;
+  text-align:center;
+  color:white;
 }
 
 h3{
   font-family: 'Vesper Libre', sans-serif;
   font-size:1em;
   font-weight:600;
-  padding-top:4em;
+  padding-top:3em;
   margin:0;
   margin-bottom:-5px;
+  text-align:center;
 }
 
 h2{
@@ -86,4 +99,14 @@ h2{
   font-size: 2.5em;
   color:#FF5750;
   margin:0;
+  text-align:center;
+  padding-bottom:.5em;
+}
+
+a{
+  color:black;
+}
+
+a:hover{
+  color:#FF5750;
 }
