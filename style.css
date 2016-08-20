@@ -44,6 +44,7 @@ section{
   position: fixed;
   padding-top:5%;
   right: 0;
+  overflow-y: auto;
 }
 
 .content{
