@@ -76,6 +76,14 @@ section{
   column-count: 2;
 }
 
+.books > ul {
+  margin-top: 0;
+}
+
+.books > ol {
+  margin-top: 0;
+}
+
 h1{
   font-family: 'Asul', sans-serif;
   font-size:1.5em;
