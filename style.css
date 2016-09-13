@@ -67,7 +67,11 @@ section{
   padding-right:3px;
   margin-left:1px;
   margin-right:-4px;
-  cursor:help;
+}
+
+.ref-link {
+    margin:0;
+    text-align: center;
 }
 
 .books {
