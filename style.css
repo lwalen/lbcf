@@ -128,6 +128,10 @@ h3 {
     text-align: center;
 }
 
+h3>a {
+    text-decoration: none;
+}
+
 h2 {
     font-family: 'Asul', serif;
     font-size: 2.5em;
