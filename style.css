@@ -1,125 +1,123 @@
 body {
-  font-family: 'Vesper Libre', serif;
-  -webkit-font-smoothing: antialiased;
-  font-size:18px;
-  margin: 0;
+    font-family: 'Vesper Libre', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    margin: 0;
 }
 
 .main {
-  width: 60%;
-  float: left;
-  padding: 5%;
+    width: 60%;
+    float: left;
+    padding: 5%;
 }
 
-.page{
-  margin:0 auto;
-  max-width:820px;
+.page {
+    margin: 0 auto;
+    max-width: 820px;
 }
 
-section{
-  max-size:800px;
-  margin: 0 auto;
-  padding-bottom:2em;
+section {
+    max-size: 800px;
+    margin: 0 auto;
+    padding-bottom: 2em;
 }
 
-.cover{
-  margin:0 auto;
-  background-color:#FF5750;
-  width: 60%;
-  float: left;
-  padding: 5%;
-  text-align: center;
+.cover {
+    margin: 0 auto;
+    background-color: #FF5750;
+    width: 60%;
+    float: left;
+    padding: 5%;
+    text-align: center;
 }
 
-.colophon{
-  padding-top:3em;
-  font-style:italic;
+.colophon {
+    padding-top: 3em;
+    font-style: italic;
 }
 
 .side {
-  background-color: #F9F7F3;
-  float: left;
-  width: 30%;
-  height: 100%;
-  position: fixed;
-  padding-top:5%;
-  right: 0;
-  overflow-y: auto;
+    background-color: #F9F7F3;
+    float: left;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    padding-top: 5%;
+    right: 0;
+    overflow-y: auto;
 }
 
-.content{
-  padding-left:15%;
-  padding-right:15%;
+.content {
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
-.paragraph-number {
-}
-
-.paragraph{
-  padding-top:1.25em;
+.paragraph {
+    padding-top: 1.25em;
 }
 
 .ref {
-  vertical-align: super;
-  font-size: .8em;
-  color:#FF5750;
-  padding-left:3px;
-  padding-right:3px;
-  margin-left:1px;
-  margin-right:-4px;
+    vertical-align: super;
+    font-size: .8em;
+    color: #FF5750;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: 1px;
+    margin-right: -4px;
+    cursor: pointer;
 }
 
 .ref-link {
-    margin:0;
+    margin: 0;
     text-align: center;
 }
 
 .books {
-  -moz-column-count: 2;
-  -webkit-column-count: 2;
-  column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
 }
 
-.books > ul {
-  margin-top: 0;
+.books>ul {
+    margin-top: 0;
 }
 
-.books > ol {
-  margin-top: 0;
+.books>ol {
+    margin-top: 0;
 }
 
-h1{
-  font-family: 'Asul', sans-serif;
-  font-size:1.5em;
-  font-weight:600;
-  margin:0;
-  text-align:center;
-  color:white;
+h1 {
+    font-family: 'Asul', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    color: white;
 }
 
-h3{
-  font-family: 'Vesper Libre', sans-serif;
-  font-size:1em;
-  font-weight:600;
-  padding-top:3em;
-  margin:0;
-  margin-bottom:-5px;
-  text-align:center;
+h3 {
+    font-family: 'Vesper Libre', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    padding-top: 3em;
+    margin: 0;
+    margin-bottom: -5px;
+    text-align: center;
 }
 
-h2{
-  font-family: 'Asul', serif;
-  font-size: 2.5em;
-  color:#FF5750;
-  margin:0;
-  text-align:center;
-  padding-bottom:.5em;
+h2 {
+    font-family: 'Asul', serif;
+    font-size: 2.5em;
+    color: #FF5750;
+    margin: 0;
+    text-align: center;
+    padding-bottom: .5em;
 }
 
-a{
-  color:black;
+a {
+    color: black;
 }
 
-a:hover{
-  color:#FF5750;
+a:hover {
+    color: #FF5750;
 }
