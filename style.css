@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Vesper Libre', serif;
     -webkit-font-smoothing: antialiased;
@@ -65,6 +69,11 @@ section.toc {
         overflow-y: auto;
         display: block;
     }
+    .list {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
 }
 
 .content {
@@ -92,17 +101,11 @@ section.toc {
     text-align: center;
 }
 
-.books {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
-}
-
-.books>ul {
+.list>ul {
     margin-top: 0;
 }
 
-.books>ol {
+.list>ol {
     margin-top: 0;
 }
 
