@@ -20,14 +20,15 @@ section.toc {
 }
 
 .cover {
+    width: 100%;
     margin: 0 auto;
     background-color: #FF5750;
     float: left;
-    padding: 5%;
     text-align: center;
 }
 
 .cover-image {
+    margin-top: 30px;
     width: 200px;
 }
 
