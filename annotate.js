@@ -1,56 +1,81 @@
 var verses = {};
-var current_ref = null;
+var currentRef = null;
+
+var mainColor = '#F9F7F3';
+var secondaryColor = '#FF5750';
 
 $(function() {
-	$.getJSON('/verses.json', function(data) {
+	$.getJSON('verses.json', function(data) {
 		verses = data;
 	});
 
 	$('.ref').on('mouseover', function() {
-		$(this).css('background-color', '#F9F7F3');
-		show_refs($(this));
-	});
+		if ($(this)[0] !== $(currentRef)[0]) {
+			$(this).css('background-color', mainColor);
+		}
 
-	$('.ref').on('click', function() {
-		$('.ref').css('border', '');
-		$(this).css('background-color', '#FF5750');
-		$(this).css('color', '#F9F7F3');
-
-		current_ref = $(this);
+		showVerses(this);
 	});
 
 	$('.ref').on('mouseout', function() {
-		$(this).css('background-color', '');
-		$(this).css('color', '');
-		if (current_ref) {
-			show_refs($(current_ref));
-		} else {
-			clear_refs();
+		if ($(this)[0] !== $(currentRef)[0]) {
+			unHighlight(this);
 		}
+
+		if (currentRef) {
+			showVerses(currentRef);
+		} else {
+			clearVerses();
+		}
+	});
+
+	$('.ref').on('click', function() {
+		if (currentRef) {
+			unHighlight(currentRef);
+		}
+
+		$(this).css('background-color', secondaryColor);
+		$(this).css('color', mainColor);
+
+		currentRef = $(this);
 	});
 });
 
-function show_refs(r) {
-	var refs = $(r).data('verses').split(';');
+function showVerses(ele) {
+	var id = getParagraphID(ele);
+	var refs = $(ele).data('verses').split(';')
 	var content = "";
 
 	refs.forEach(function(ref) {
 		ref = ref.trim();
+		if (ref === "") {
+			return;
+		}
 
 		if (verses[ref]) {
 			content += "<h4>" + ref + "</h4>";
 			content += "<p>" + verses[ref] + "</p>";
+		} else {
+			console.log("Missing verse content for " + ref)
 		}
 	});
 
-	var section = r.parent().find('.paragraph-number').attr('id');
 	var pattern = /chapter-([0-9]+)-paragraph-([0-9]+)/g;
-	var section_name = section.replace(pattern, 'Chapter $1, Paragraph $2');
-	$('.side .ref-link').html("<a href='#" + section + "'>" + section_name + "</a>");
+	var section_name = id.replace(pattern, 'Chapter $1, Paragraph $2');
+	$('.side .ref-link').html("<a href='#" + id + "'>" + section_name + "</a>");
 	$('.side .content').html(content);
 }
 
-function clear_refs() {
+function clearVerses() {
 	$('.side .ref-link').html("");
 	$('.side .content').html("");
+}
+
+function unHighlight(ele) {
+	$(ele).css('background-color', '');
+	$(ele).css('color', '');
+}
+
+function getParagraphID(ele) {
+	return $(ele).parent().find('.paragraph-number').attr('id');
 }
