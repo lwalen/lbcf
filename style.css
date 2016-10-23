@@ -11,7 +11,7 @@ body {
 
 section {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 .8em;
     padding-bottom: 2em;
 }
 
@@ -21,7 +21,7 @@ section.toc {
 
 .cover {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 1em auto;
     background-color: #FF5750;
     float: left;
     text-align: center;
@@ -29,7 +29,7 @@ section.toc {
 
 .cover-image {
     margin-top: 30px;
-    width: 200px;
+    width: 150px;
 }
 
 .colophon {
@@ -42,49 +42,13 @@ section.toc {
     display: none;
 }
 
-@media only screen and (min-width: 480px) {
-    .main {
-        width: 60%;
-        float: left;
-        padding: 5%;
-    }
-    .cover {
-        margin: 0 auto;
-        background-color: #FF5750;
-        width: 60%;
-        float: left;
-        padding: 5%;
-        text-align: center;
-    }
-    .cover-image {
-        width: 100%;
-        max-width: 400px;
-    }
-    .side {
-        background-color: #F9F7F3;
-        float: left;
-        width: 30%;
-        height: 100%;
-        position: fixed;
-        padding-top: 5%;
-        right: 0;
-        overflow-y: auto;
-        display: block;
-    }
-    .list {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
+.paragraph {
+    padding-top: 1.25em;
 }
 
 .content {
     padding-left: 15%;
     padding-right: 15%;
-}
-
-.paragraph {
-    padding-top: 1.25em;
 }
 
 .ref {
@@ -118,13 +82,13 @@ h1 {
     margin: 0;
     text-align: center;
     color: white;
+    padding-bottom: .7em;
 }
 
 h3 {
     font-family: 'Vesper Libre', sans-serif;
     font-size: 1em;
     font-weight: 600;
-    padding-top: 3em;
     margin: 0;
     margin-bottom: -5px;
     text-align: center;
@@ -136,7 +100,7 @@ h3>a {
 
 h2 {
     font-family: 'Asul', serif;
-    font-size: 2.5em;
+    font-size: 1.25em;
     color: #FF5750;
     margin: 0;
     text-align: center;
@@ -149,4 +113,52 @@ a {
 
 a:hover {
     color: #FF5750;
+}
+
+@media only screen and (min-width: 480px) {
+    .main {
+        width: 60%;
+        float: left;
+        padding: 5%;
+    }
+    .cover {
+        margin: 0 auto;
+        background-color: #FF5750;
+        width: 60%;
+        float: left;
+        padding: 5%;
+        text-align: center;
+    }
+    .cover-image {
+        width: 100%;
+        max-width: 400px;
+    }
+    section {
+        margin: 0 auto;
+    }
+    .side {
+        background-color: #F9F7F3;
+        float: left;
+        width: 30%;
+        height: 100%;
+        position: fixed;
+        padding-top: 5%;
+        right: 0;
+        overflow-y: auto;
+        display: block;
+    }
+    .list {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+    h1 {
+        padding-bottom: 0;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    h3 {
+        padding-top: 3em;
+    }
 }
