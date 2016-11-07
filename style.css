@@ -115,6 +115,10 @@ a:hover {
     color: #FF5750;
 }
 
+.paragraph-number a {
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 480px) {
     .main {
         width: 60%;
