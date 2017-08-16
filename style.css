@@ -19,6 +19,10 @@ section.toc {
     padding-bottom: 0;
 }
 
+section.toc h3 {
+    padding-bottom: 1em;
+}
+
 .cover {
     width: 100%;
     margin: 0 auto 1em auto;
