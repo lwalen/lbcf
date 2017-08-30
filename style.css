@@ -119,6 +119,15 @@ a:hover {
     text-decoration: none;
 }
 
+table {
+  font-size: 0.75em;
+}
+
+td {
+    padding-left: 0.5em;
+    padding-right: 0.5em
+}
+
 @media only screen and (min-width: 480px) {
     .main {
         width: 60%;
@@ -164,5 +173,8 @@ a:hover {
     }
     h3 {
         padding-top: 3em;
+    }
+    table {
+      font-size: 1em;
     }
 }
