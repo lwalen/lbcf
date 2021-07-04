@@ -9,7 +9,29 @@ faith.
 Here are the different formats available:
 * [Web page](http://lbcf.walen.me) with scripture references
 * [Markdown](https://github.com/lwalen/lbcf-1689/blob/master/lbcf.md)
+* [LaTeX](https://github.com/lwalen/lbcf-1689/blob/master/lbcf.tex)
+* [PDF, compiled from the LaTeX source](https://github.com/lwalen/lbcf-1689/blob/master/lbcf.pdf)
+* [Alternative webpage (HTML), also compiled from LaTeX](https://github.com/lwalen/lbcf-1689/blob/master/htlatex_lbcf.html) (requires accompanying CSS file)
 * [JSON](https://github.com/lwalen/lbcf-1689/blob/master/lbcf.json)
+
+## Creating the PDF and HTML from LaTeX Source
+Although this may seem complicated at face-value, this can be made quite easy with a text editor such as [TeXWorks](http://www.tug.org/texworks/) or [TeXLive](https://tug.org/texlive/).  TeXWorks is probably the easier to install and come automatically on Windows with packages such as [MiKTeX](https://miktex.org/).  You can probably compile from Microsoft's [Visual Studio Code](https://code.visualstudio.com/) as well, provided to install any relevant extensions.
+
+These packages and editors usually require external packages to be installed before you compile a document.  The LBCF LaTeX document requires the Hyperref and maybe one day the Tabularx package, so you may have to accept a prompt to install it, unless you have set external packages to install automatically.
+
+Installing can probably be done via a graphical desktop interface; however, it should be as simple as: cd (change directories / folders) to the folder where the document is located and just type
+```
+pdflatex lbcf.tex
+```
+to create the PDF from a text-based console or terminal, such as the terminal in Mac OS or Linux, or otherwise you can use the Windows Command Prompt or Powershell.
+
+To create the html, just call
+```
+htlatex lbcf.tex
+```
+.
+
+Please preserve the file extension if you make any changes.
 
 ## Issues and feature requests
 Please use the [issue tracker in GitHub](https://github.com/lwalen/lbcf-1689/issues)
