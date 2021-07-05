@@ -5,13 +5,6 @@ description: "The 1689 London Baptist Confession of Faith (LBCF)"
 permalink: /1689lbc/
 ---
 
-#### PERSONAL NOTE
-<strong>With the definite exceptions of ch. 10.3, 26.4b and arguably 28.2, as well as arguably 30.3,8 (marked with prefix [!]), the following statement (confession) of faith is representative of a lot of the things that I essentially, personally believe about the Christian faith.</strong>
-
-The bulk of the content is taken from the Presbyterian [1646-7 Westminster Confession of Faith](https://www.ligonier.org/learn/articles/westminster-confession-faith/), with sections also taken from the Congregationalistic [1658 Savoy Declaration](http://apostles-creed.org/wp-content/uploads/2014/07/the-savoy-declaration-of-faith-and-order-1658.pdf), as well as excerpts from the [1644 1st London Baptist Confession of Faith (1LBCF)](http://www.reformedreader.org/ccc/1644lbc.htm).
-
-(You can see a highlighted tabular comparison of the WCF, SD and the LBC [here](https://www.proginosko.com/docs/wcf_sdfo_lbcf.html)).
-
 This expression of the 2LBCF was taken from the [Oz Reformed Baptists](http://ozreformedbaptist.org/the-167789-lbcf/) website.
 
 ## Table of Contents
