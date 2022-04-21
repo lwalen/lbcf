@@ -38,7 +38,7 @@ Please preserve the file extension if you make any changes.
 
 ## Issues and feature requests
 Please use the [issue tracker in GitHub](https://github.com/lwalen/lbcf-1689/issues)
-or email <mailto:lars@walen.me> to report any issues you find, and to suggest
+or email [lars@walen.me](MAILTO:lars@walen.me) to report any issues you find, and to suggest
 new features.
 
 ## Contributing
