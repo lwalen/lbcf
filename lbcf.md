@@ -1,10 +1,4 @@
-﻿---
-layout: page
-title: The 1677-89 (2nd) London Baptist Confession of Faith (2LBCF)
-description: "The 1689 London Baptist Confession of Faith (LBCF)"
-permalink: /1689lbc/
----
-
+﻿# The 1677-89 (2nd) London Baptist Confession of Faith (2LBCF)
 This expression of the 2LBCF was taken from the [Oz Reformed Baptists](http://ozreformedbaptist.org/the-167789-lbcf/) website.
 
 ## Table of Contents
