@@ -1,5 +1,4 @@
 # London Baptist Confession of Faith (1689)
-
 This repository contains several representations of the [Baptist
 Confession of Faith of 1689](https://en.wikipedia.org/wiki/1689_Baptist_Confession_of_Faith),
 a document written in 1677 and published in 1689 by Calvinistic Baptists in London.
