@@ -7,7 +7,8 @@ faith.
 
 Here are the different formats available:
 * [Web page](http://lbcf.walen.me) with scripture references
-* [Markdown](https://github.com/lwalen/lbcf-1689/blob/master/lbcf.md)
+* [Markdown (without Scripture References)](https://github.com/lwalen/lbcf-1689/blob/master/lbcf.md)
+* [Markdown (with Scripture References)](https://github.com/lwalen/lbcf-1689/blob/master/lbcf_with_refs.md)
 * [LaTeX](https://github.com/lwalen/lbcf-1689/blob/master/latex/lbcf.tex)
   * [PDF, compiled from the LaTeX source](https://github.com/lwalen/lbcf-1689/blob/master/latex/lbcf.pdf)
   * [Alternative webpage (HTML), also compiled from LaTeX using HTLatex](https://github.com/lwalen/lbcf-1689/blob/master/latex/lbcf.html) (requires accompanying CSS file)
