@@ -9,8 +9,11 @@ Here are the different formats available:
 * [Web page](http://lbcf.walen.me) with scripture references
 * [Markdown](https://github.com/lwalen/lbcf-1689/blob/master/lbcf.md)
 * [LaTeX](https://github.com/lwalen/lbcf-1689/blob/master/latex/lbcf.tex)
-* [PDF, compiled from the LaTeX source](https://github.com/lwalen/lbcf-1689/blob/master/latex/lbcf.pdf)
-* [Alternative webpage (HTML), also compiled from LaTeX using HTLatex](https://github.com/lwalen/lbcf-1689/blob/master/latex/lbcf.html) (requires accompanying CSS file)
+  * [PDF, compiled from the LaTeX source](https://github.com/lwalen/lbcf-1689/blob/master/latex/lbcf.pdf)
+  * [Alternative webpage (HTML), also compiled from LaTeX using HTLatex](https://github.com/lwalen/lbcf-1689/blob/master/latex/lbcf.html) (requires accompanying CSS file)
+* [Microsoft Word](https://github.com/lwalen/lbcf-1689/blob/master/lbcf.docx)
+  * [PDF, compiled from the MS Word Doc](https://github.com/lwalen/lbcf-1689/blob/master/lbcf_from_ms_word.pdf)
+  * [Rich Text Format (RTF), converted from the aforementioned Word document](https://github.com/lwalen/lbcf-1689/blob/master/lbcf.rtf)
 * [JSON](https://github.com/lwalen/lbcf-1689/blob/master/lbcf.json)
 
 ## Creating the PDF and HTML from LaTeX Source
